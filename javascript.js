@@ -1,14 +1,16 @@
-let age = 16;
+function capitalize(string) {
+    if (!string) return "";
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
 
-console.log(age);
+console.log(capitalize("abcd"))
+console.log(capitalize("ABCD"))
+console.log(capitalize("aBcD"))
 
-age = 54;
 
-console.log(age);
+function lastLetter(string) {
+    if (!string) return "";
+    return string.slice(-1);
+}
 
-console.log((3 + 2) - 76 * (1 + 1));
-
-console.log(23+97);
-console.log(22+3+98+738+22+42);
-console.log((4+6+9)/77);
-
+console.log(lastLetter("abcd"))
